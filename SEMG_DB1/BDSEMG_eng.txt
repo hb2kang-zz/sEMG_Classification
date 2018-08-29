@@ -1,0 +1,57 @@
+1.	Superficial electromyography Database (EMG), for analysis in lower limb
+Abstract: This database contains 11 samples of subject with some abnormality in the knee previously diagnostic  and 11 with normality on them. These data was collected with the equipment Biometrics DataLOG MWX8 electromiography and goniometry.
+Database characteristics	Time-Series	Number of samples 22	Area	CS / Engineering
+Attribute	Real	Number of attributes  5	
+samples taken on:
+July 2012 // March 2013 // July 2013
+
+2.	Sources: 
+Batallón de sanidad (BASAN) Universidad Militar Nueva Granada – Bogotá (samples Julio 2012).
+Carrera 7 No 52-48, Bogotá.
+TecnoParque SENA nodo Manizales (samples march-july 2013).
+Km 10 vía al Magdalena, Manizales.
+
+3.	Database information:
+
+3.1.	Protocol:
+22 male subjects , 11 with different abnormalities in the knee previously diagnostic. In 3 different exercises for analisys in muscular behavior in relation with the knee, march, extensión of the leg from sit position and flexion of the knee stand up. 
+The acquisition process was made with 4 electrodes on following muscles(vastus internus, semitendinosus, biceps femoris and rectus femoris) and goniomtry equipment on the knee. 
+3.2.	Instrumentation
+We use datalog MWX8 de la compañía Biometrics,  8 analog channels and 4 digital, 4 for SEMG samples and 1 for gonimetry, acquired directly from equipment MWX8 on internal memory and transmited on real time to software Datalog on computer through bluetooth, 14 bits of resolution and frecuency sample of 1000Hz.
+3.3.	Data configuration:
+4 electrodes for each data serie, channel (1 to 4). each set contains 3 to 5 repetitions of each exercise proposed.
+
+4.	Information attribute
+Each file contains 5 columns, in this way:
+Segment 	Leg
+Channel	Ch1	Ch2	Ch3	Ch4	Ch5
+Muscle	RF	BF	VM	ST	FX
+Column	0	1	2	3	4
+
+Segment: defines the body part where the data are taken..
+Channel: corresponds to the electrode attached to a muscle.
+Muscle: corresponds to the muscle being measured.
+RF: rectus femoris.
+BF: biceps femoris.
+VM: vastus internus.
+ST: semitendinosus.
+FX: knee flexion.
+
+Headerss:
+File Name: 2Nsen.log
+Channel 1: 'RF', 15300 values, engineering units: mV, no filters.
+Channel 2: 'BF', 15300 values, engineering units: mV, no filters.
+Channel 3: 'VM', 15300 values, engineering units: mV, no filters.
+Channel 4: 'ST', 15300 values, engineering units: mV, no filters.
+Channel 5: 'FX', 765 values, engineering units: deg, no filters, extrapolated from 50 to 1000 samples per second.to 1000 samples per second.
+
+7.  Number of classes:
+Database contains 22 samples 11 normal and 11 with some patology on knee, each patient has 3 different kind of samples: march, extensión of the leg from sit position and flexion of the knee stand up.
+8. Others:
+4 folders una A_LOG, A_TXT, N_LOG Y N_TXT .
+Folder _log contain data in .log format, can be analysed from datalog software by Biometrics.
+Folder _txt contain data SEMG in columns with headers.
+
+
+
+
